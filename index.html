@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <title>Deguz's 15-Puzzle</title>
+</head>
+
+<body>
+  <span class="pointer-type-text">mouse mode</span>
+  <div class="controls-switcher"><span>Controls:</span><span
+      class="controls-span-drag controls-active">drag</span>/<span class="controls-span-click">click</span>
+  </div>
+  <p class="resolution-text"></p>
+  <span class="copyright-text">© <a rel="noopener" href="https://www.linkedin.com/in/deguzbelarus/"
+      target="_blank">Anton Dektyarev a.k.a. Deguz</a>,
+    2022</span>
+  <audio id="audio-player" src="./assets/slide.wav"></audio>
+  <img class="sound-icon" src="./assets/bgmon.png" alt="a speaker icon">
+  <div class="game-wrapper">
+    <div class="top-score-wrapper"></div>
+    <div class="victory-wrapper"></div>
+    <div class="upper-block-wrapper">
+      <div class="clock-wrapper">
+        <div class="clock">
+          <p>TURNS: <span id="turns">0</span></p>
+          <p>DURATION: <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>
+        </div>
+      </div>
+      <div class="menu-buttons-wrapper">
+        <button class="start-button" type="button">START</button>
+        <button class="stop-button" type="button" disabled="true">STOP</button>
+        <button class="save-button" type="button">SAVE</button>
+        <button class="top-button" type="button">TOP</button>
+      </div>
+      <button type="button" class="game-menu-button">MENU</button>
+    </div>
+    <div class="game-matrix"></div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
